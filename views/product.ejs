@@ -1,0 +1,193 @@
+<%- include('./layouts/partials/header') %>
+    <%- include('./layouts/partials/navbar') %>
+
+        <div class="mt-5"></div>
+
+        <h1 class="text-center text-primary">Milk Products</h1>
+        <div class="mt-5"></div>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/images/product6.jpg" class="d-block w-100  about_crousal_img" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/images/product1.jpg" class="d-block w-100 about_crousal_img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/product2.jpg" class="d-block w-100 about_crousal_img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/product3.jpg" class="d-block w-100 about_crousal_img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/product4.jpg" class="d-block w-100 about_crousal_img" alt="...">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="mt-5"></div>
+        <!-- product list  -->
+
+        <div class="card-group">
+
+            <div class="card">
+                <form action="/product_insert" method="post">
+                    <img src="/images/milk_product.jpg" class="card-img-top" name="product_image" alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name">Fresh Milk</p>
+
+                        <input class="col-md-2" name="product_price" disabled value="₹ 60/KG" />
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <form action="/product_insert" method="post">
+                    <img src="/images/dahi_curd.jpg" name="product_image" class="card-img-top" alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name">Fresh Crud (Dahi)</p>
+
+                        <input class="col-md-2" name="product_price" disabled value="₹ 80/KG" />
+
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <form action="/product_insert" method="post">
+                    <img src="/images/paneer.jpg" name="product_image" class="card-img-top" alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name">Fresh Paneer</p>
+
+                        <input class="col-md-2" name="product_price" disabled value="₹ 320/KG" />
+
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-group">
+
+            <div class="card">
+                <form action="/product_insert" method="post">
+                    <img src="/images/milk_shake.jpg " name="product_image" class="card-img-top" alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name">Stoberry Flavour Milk Shake</p>
+
+                        <input class="col-md-2" name="product_price" disabled value="₹ 70/KG" />
+
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <form action="/product_insert" method="post">
+                    <img src="/images/shreekhand.jpg" name="product_image" class="card-img-top" alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name">Kesar Pista Shreekhand</p>
+
+                        <input class="col-md-2" name="product_price" disabled value="₹ 100/KG" />
+
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="/product_insert" method="post">
+                    <img src="/images/mithai.jpg" name="product_image" class="card-img-top" alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name">Celebration Pack Of Mithai</p>
+
+                        <input class="col-md-2" name="product_price" disabled value="₹ 590/KG" />
+
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- /////////// -->
+        <div class="card-group">
+            <div class="card">
+                <form action="/product_insert" method="post">
+
+                    <img src="/images/vanilla_icecreame.jpg" name="product_image" class="card-img-top" alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name">Vanilla Icecreame</p>
+
+                        <input class="col-md-2" name="product_price" disabled value="₹ 90/KG" />
+
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="/product_insert" method="post">
+                    <img src="/images/straberry_icecream.jpg" name="product_image" class="card-img-top"
+                        alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name">Straberry Icecreame</p>
+
+                        <input class="col-md-2" name="product_price" disabled value="₹ 110/KG" />
+
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="/product_insert" method="post">
+                    <img src="/images/Caramel_icecream.jpg" name="product_image" class="card-img-top" alt="milk image">
+                    <div class="card-body">
+                        <p class="card-text mb-2" name="product_name" value="Caramel Icecreame"> </p>
+                        <input class="col-md-2" name="product_price" disabled value="₹ 50/KG" />
+
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+                            <input type="submit" name="submit" value="BUY NOW" id="submit" class="btn btn-info">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <%- include('./layouts/partials/footer') %>

@@ -1,0 +1,98 @@
+<%- include('./layouts/partials/header') %>
+    <%- include('./layouts/partials/navbar') %>
+        <div class="mt-5"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="/images/contact1.jpg" class="d-block w-100  contact_crousal_img" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="/images/contact2.jpg" class="d-block w-100 contact_crousal_img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/conatct4.jpg" class="d-block w-100 contact_crousal_img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/conatct5.jpg" class="d-block w-100 contact_crousal_img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/conatct3.jpg" class="d-block w-100 about_crousal_img" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- <div class="mt-4"></div>
+        <h1 class="text-center text-primary">Fill Contact/Complaints</h1>
+        <div class="mt-4"></div> -->
+            <div class="col-md-6">
+                <div class="container">
+                    <form action="/contact_submit" method="post" id="contact_con2"
+                        onSubmit="alert('Please Check You Fill Data');">
+                        <div class="row mt-2">
+                            <h1 class="text-center text-dark">Contact Us</h1>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md mt-2">
+                                <div class="form-floating">
+                                    <input type="text" name="firstName" class="form-control bg"
+                                        placeholder="First Name">
+                                    <label for="First Name" class="label">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md mt-2">
+                                <div class="form-floating ">
+                                    <input type="text" name="lastName" class="form-control bg" placeholder="Last Name">
+                                    <label for="Last Name" class="label">Last Name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md mt-2">
+                                <div class="form-floating">
+                                    <input type="number" name="phoneNumber" class="form-control bg" placeholder="Phone">
+                                    <label for="Phone" class="label">Phone</label>
+                                </div>
+                            </div>
+                            <div class="col-md mt-2">
+                                <div class="form-floating ">
+                                    <input type="email" name="email" class="form-control bg"
+                                        placeholder="Email Address">
+                                    <label for="floatingInputGrid" class="label">Email Address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12 mt-2">
+                                <div class="form-floating">
+                                    <textarea style="height: 160px;" type="text" name="message" class="form-control bg"
+                                        placeholder="Message"></textarea>
+                                    <label for="Message" class="label">Message</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="submit" name="submit" id="submit" onclick="submit()"
+                                    class="btn btn-info mt-2 text-dark" value="Send Message">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <%- include('./layouts/partials/footer') %>
